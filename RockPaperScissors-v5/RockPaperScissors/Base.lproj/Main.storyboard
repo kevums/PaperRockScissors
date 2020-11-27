@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="Tz4-ZE-PNA">
+                                <rect key="frame" x="87" y="312" width="216" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkj-TK-jSb">
+                                <rect key="frame" x="20" y="580" width="125" height="125"/>
+                                <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWO-SG-RRG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-qt-Muh">
+                                <rect key="frame" x="146" y="589" width="117" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="fnm-RD-eg3"/>
+                                    <constraint firstAttribute="height" constant="116" id="weG-IJ-a5b"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="rock"/>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJT-3k-zZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgh-nw-c9C">
+                                <rect key="frame" x="271" y="557" width="100" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Om-J7-PCg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="scissors"/>
+                                <connections>
+                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLd-7F-FXw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="game results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKF-m2-pWK">
+                                <rect key="frame" x="73" y="455" width="245" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="kmP-S6-v5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-M9-WJ7">
+                                <rect key="frame" x="150" y="765" width="108" height="30"/>
+                                <state key="normal" title="Reset game"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M78-SP-vLx"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="k6R-bh-bvb">
+                                <rect key="frame" x="40" y="120" width="245" height="192"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-eH-Eih">
+                                <rect key="frame" x="88" y="155" width="149" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="tfi-2h-bTy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.77137124540000002" green="0.94646483660000003" blue="0.90597224239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k6R-bh-bvb" secondAttribute="trailing" constant="105" id="9Gc-mQ-GLq"/>
+                            <constraint firstItem="AKF-m2-pWK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="BXs-3S-kI2"/>
+                            <constraint firstItem="Tz4-ZE-PNA" firstAttribute="top" secondItem="Hsn-eH-Eih" secondAttribute="bottom" constant="68" id="Dzi-1G-Mz5"/>
+                            <constraint firstItem="Tz4-ZE-PNA" firstAttribute="centerX" secondItem="AKF-m2-pWK" secondAttribute="centerX" id="E52-Mi-ifB"/>
+                            <constraint firstItem="kgh-nw-c9C" firstAttribute="leading" secondItem="NuO-qt-Muh" secondAttribute="trailing" constant="8" id="Eag-ns-6j5"/>
+                            <constraint firstItem="Tz4-ZE-PNA" firstAttribute="top" secondItem="k6R-bh-bvb" secondAttribute="bottom" id="LWJ-XO-NhZ"/>
+                            <constraint firstItem="AKF-m2-pWK" firstAttribute="centerX" secondItem="hkg-M9-WJ7" secondAttribute="centerX" constant="-8.5" id="QPI-EW-Vcy"/>
+                            <constraint firstItem="AKF-m2-pWK" firstAttribute="top" secondItem="Tz4-ZE-PNA" secondAttribute="bottom" constant="15" id="Roz-o6-4ee"/>
+                            <constraint firstItem="k6R-bh-bvb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SRJ-od-TNG"/>
+                            <constraint firstItem="hkg-M9-WJ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Swa-45-Ct8"/>
+                            <constraint firstItem="fkj-TK-jSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X3j-uH-Mt5"/>
+                            <constraint firstItem="NuO-qt-Muh" firstAttribute="leading" secondItem="fkj-TK-jSb" secondAttribute="trailing" constant="1" id="YS0-0G-8cO"/>
+                            <constraint firstItem="Tz4-ZE-PNA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDw-gS-4Kj"/>
+                            <constraint firstItem="hkg-M9-WJ7" firstAttribute="top" secondItem="NuO-qt-Muh" secondAttribute="bottom" constant="60" id="c8W-GR-eFQ"/>
+                            <constraint firstItem="kgh-nw-c9C" firstAttribute="top" secondItem="AKF-m2-pWK" secondAttribute="bottom" constant="8" id="fvA-L8-yIB"/>
+                            <constraint firstItem="fkj-TK-jSb" firstAttribute="top" secondItem="AKF-m2-pWK" secondAttribute="bottom" constant="31" id="g5I-Y2-HUX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fkj-TK-jSb" secondAttribute="bottom" constant="105" id="gtG-Bx-lw4"/>
+                            <constraint firstItem="fkj-TK-jSb" firstAttribute="bottom" secondItem="NuO-qt-Muh" secondAttribute="bottom" id="hIJ-Uy-7Bf"/>
+                            <constraint firstItem="Hsn-eH-Eih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="hg2-T9-I2a"/>
+                            <constraint firstItem="Hsn-eH-Eih" firstAttribute="trailing" secondItem="hkg-M9-WJ7" secondAttribute="trailing" constant="-21" id="lED-UR-V5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgh-nw-c9C" secondAttribute="trailing" constant="19" id="mVm-cf-Tbv"/>
+                            <constraint firstItem="k6R-bh-bvb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="nG5-da-5eC"/>
+                            <constraint firstItem="NuO-qt-Muh" firstAttribute="top" secondItem="AKF-m2-pWK" secondAttribute="bottom" constant="40" id="qeg-PX-3G6"/>
+                            <constraint firstItem="NuO-qt-Muh" firstAttribute="bottom" secondItem="kgh-nw-c9C" secondAttribute="bottom" id="rbQ-tP-QLw"/>
+                            <constraint firstItem="Hsn-eH-Eih" firstAttribute="leading" secondItem="Tz4-ZE-PNA" secondAttribute="leading" constant="1" id="tkc-35-0kf"/>
+                            <constraint firstItem="Hsn-eH-Eih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="zKB-vh-1sP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameResultLabel" destination="AKF-m2-pWK" id="QGI-cW-wbo"/>
+                        <outlet property="paperButton" destination="fkj-TK-jSb" id="nhV-GM-pPt"/>
+                        <outlet property="resetButton" destination="hkg-M9-WJ7" id="kT5-c5-iDH"/>
+                        <outlet property="robotChat" destination="Hsn-eH-Eih" id="Edm-t2-6ij"/>
+                        <outlet property="robotChatBubble" destination="k6R-bh-bvb" id="5ox-G4-hfc"/>
+                        <outlet property="robotImage" destination="Tz4-ZE-PNA" id="Lc5-Y4-yxH"/>
+                        <outlet property="rockButton" destination="NuO-qt-Muh" id="TSq-ye-anZ"/>
+                        <outlet property="scissorsButton" destination="kgh-nw-c9C" id="7AT-7p-ayR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="118.00947867298578"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="1523" height="1330"/>
+        <image name="paper" width="303" height="366"/>
+        <image name="robot" width="144" height="167"/>
+        <image name="rock" width="273" height="292"/>
+        <image name="scissors" width="251" height="389"/>
+    </resources>
+</document>
